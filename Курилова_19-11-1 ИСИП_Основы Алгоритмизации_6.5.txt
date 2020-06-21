@@ -1,0 +1,16 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+class HelloWorld {
+  static void Main() {
+    ArrayList list = new ArrayList() {1, -10, 15, 22, -20, 144, -22, 30, 8, 4};
+    for(int i=0; i<5;i++){
+        int mid = list.Count/2;
+        list.Insert(mid, 0);
+    }
+   
+    foreach (object i in list) {
+        Console.Write(i + "  ");
+    }
+  }
+}
